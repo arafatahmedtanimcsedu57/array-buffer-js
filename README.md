@@ -3,7 +3,6 @@
 ## Introduction
 
 > Array Buffer is part of the Binary Data API introduced in ECMAScript 6 which is commonly used to handle Binary Data such as files, images, audio, and any other raw binary data buffer.
-It doesn’t provide a method to manipulate data. Instead, you need to use Typed Arrays or DataView to interpret and manipulate data.
 
 ## Constructor
 
@@ -55,7 +54,7 @@ console.log(view); // Output: Uint8Array(8) [1, 2, 3, 4, 5, 6, 7, 8]
 ## Manipulation
 
 Unfortunately/fortunately JS doesn’t provide the pointer. So, we can't manipulate ArrayBuffer directly using the memory address, and it doesn’t provide a method to manipulate data.
-Instead, you need to use Typed Arrays or DataView to interpret and manipulate data.
+Instead, we must use Typed Arrays or DataView to interpret and manipulate data.
 
 ### Using Typed Arrays
 
@@ -112,7 +111,6 @@ JavaScript doesn’t crash or corrupt memory when you attempt out-of-bounds acce
 Example:
 
 ```JS
-Copy code
 const buffer = new ArrayBuffer(8);
 const view = new Uint8Array(buffer);
 
